@@ -4,9 +4,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Rodion Trynkin CV</title>
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item"><a href="#" class="header-link">Summary</a></li>
+          <li class="header-item"><a href="#" class="header-link">Contacts</a></li>
+          <li class="header-item"><a href="#" class="header-link">Education</a></li>
+          <li class="header-item"><a href="#" class="header-link">Skills</a></li>
+          <li class="header-item"><a href="#" class="header-link">Projects</a></li>
+        </ul>
+      </nav>
+      <div class="dark-mode-box">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="section section-profile">
+        <img src="assets/images/Avatar.jpeg" alt="profile-photo" class="section-profile-photo">
+        <div class="section-profile-title">
+          <h1 class="main-title">Rodion Trynkin</h1>
+          <h3 class="section-subtitle">Junior Front-end Developer</h3>
+        </div>
+      </section>
+      <section class="section" id="Summary">
+        <p class="summary-text">I started to get involved in programming in 2022. I have a main job. But later I want to change the field of activity to programming. Most ofall inprogramming Ilike tosee the result of my work.</p>
+        <p class="summary-text">In my spare time I enjoy film and mobile photography. I also like to play basketball and ride a bike. I dream of traveling a lot and meeting new people with different outlooks on life.</p>  
+      </section>
+      <section class="section" id="Contacts">
+        <ul class="section-list contacts-list">
+          <li class="section-item contacts-item">Novokuznetsk, Russia</li>
+          <li class="section-item contacts-item">Email:<a href="mailto:rodionat93@gmail.com" class="contacts-link">Rodionat93@gmail.com</a></li>
+          <li class="section-item contacts-item">Github:<a href="https://github.com/MrDalmatov" class="contacts-link">MrDalmatov</a></li>
+          <li class="section-item contacts-item">Telegram:<a href="https://t.me/MrDalmatov" class="contacts-link">@MrDalmatov</a></li>
+          <li class="section-item contacts-item">Discord:<a href="https://discord.gg/zUr7wWYPXE" class="contacts-link">rodiontrynkin#1915</a></li>
+        </ul>
+      </section>
+      <section class="section" id="Education">
+        <ul class="section-list">
+          <li class="setion-item">CodeBasics: JavaScript for beginner</li>
+          <li class="setion-item">Udemy: Web Development By Doing: HTML / CSS</li>
+          <li class="setion-item">Novokuznetsk Trade and Economic College</li>
+        </ul>
+      </section>
+      <section class="section" id="Skills">
+        <ul class="section-list">
+          <li class="section-item">Web-development: HTML5, CSS3, JavaScript</li>
+          <li class="section-item">Version control: GIT, Github</li>
+          <li class="section-item">Graphics: Figma</li>
+          <li class="section-item">English: A2 — Pre-Intermediate</li>
+        </ul>
+      </section>
+      <section class="section" id="Projects">
+        <a href="" class="section-link projects-link">Slurm</a>
+        <a href="" class="section-link projects-link">MY CV</a>
+        <a href="" class="section-link projects-link">Plants</a>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <h5 class="footer-signature">RODION TRYNKIN CV</h5>
+      <a href="https://github.com/MrDalmatov" class="footer-github-link">&copy; 2022 MrDalmatov</a>
+    </div>
+  </footer>
 </body>
 </html>

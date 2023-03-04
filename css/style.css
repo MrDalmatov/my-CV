@@ -26,6 +26,18 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease;
+}
+
+.main {
+  position: relative;
+}
+
+.up-btn {
+  position: absolute;
+  bottom: -72px;
+  right: 46px;
+  cursor: pointer;
 }
 
 .container {
@@ -43,6 +55,7 @@ body {
   z-index: 10;
   background-color: var(--background-color);
   transition: .3s all linear;
+  transition: background-color 0.3s ease;
   top: 0;
   left: 0;
   padding: 1.6rem 4.6rem;
@@ -83,7 +96,7 @@ body {
 
 .dark-mode-box {
   padding-bottom: 2.4rem;
-  border-bottom: 2px solid #C6C6C6;
+  border-bottom: 2px solid var(--divider-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -388,6 +401,11 @@ input:checked + .slider:before {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 0;
+    background-color: none;
+  }
+
+  body.dark .header-nav {
+    background-color: none;
   }
 
   .header-list {
@@ -454,4 +472,160 @@ input:checked + .slider:before {
   .header-link:hover::before {
     width: 100%;
   }
+
+  body.dark .header-link::before {
+    background-color: #FFFFFF;
+  }
+
+  body.dark .dark-mode-box {
+    border-bottom: none;
+  }
+
+  .footer > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .up-btn {
+    bottom: 8px;
+  }
+}
+
+/* dark theme */
+
+body.dark {
+  background-color: var(--background-dark-color);
+}
+
+body.dark .header-nav {
+  background-color: var(--background-dark-color);
+}
+
+body.dark .header-link {
+  color: var(--secondary-dark-color);
+}
+
+body.dark .header-link:hover {
+  color: #FFFFFF;
+}
+
+body.dark .slider {
+  background-color: var(--secondary-dark-color);
+}
+
+body.dark .slider:before {
+  background-color: var(--background-dark-color);
+}
+
+body.dark input:checked + .slider {
+  background-color: var(--secondary-dark-color);
+}
+
+body.dark input:focus + .slider {
+  box-shadow: 0 0 1px var(--background-dark-color);
+}
+
+body.dark input:checked + .slider:before {
+  background-color: var(--background-dark-color);
+}
+
+body.dark .switch::before {
+  content: url(../assets/images/dark_light_mode.svg);
+}
+body.dark .switch::after {
+  content: url(../assets/images/dark_dark_mode.svg);
+}
+
+body.dark .main-title {
+  color: var(--secondary-dark-color);
+}
+
+body.dark .section-subtitle {
+  color: var(--primary-dark-color);
+}
+
+body.dark .section-title {
+  color: var(--secondary-dark-color);
+  border-bottom: 2px solid var(--divider-dark-color);
+}
+
+body.dark .summary-text {
+  color: var(--primary-dark-color);
+}
+
+body.dark .contacts-item:nth-child(1)::before {
+  background-image: url(../assets/images/dark_location_on.svg);
+}
+body.dark .contacts-item:nth-child(2)::before {
+  background-image: url(../assets/images/dark_mail.svg);
+}
+body.dark .contacts-item:nth-child(3)::before {
+  background-image: url(../assets/images/dark_Github.svg);
+}
+body.dark .contacts-item:nth-child(4)::before {
+  background-image: url(../assets/images/dark_Telegram.svg);
+}
+body.dark .contacts-item:nth-child(5)::before {
+  background-image: url(../assets/images/dark_Discord.svg);
+}
+
+body.dark .contacts-link {
+  color: var(--secondary-dark-color);
+}
+
+body.dark .contacts-link:hover {
+  color: var(--primary-dark-color);
+}
+
+body.dark .section-item {
+  color: var(--primary-dark-color);
+}
+
+body.dark .projects-link {
+  color: var(--primary-dark-color);
+}
+
+body.dark .projects-link::after {
+  content: url(../assets/images/dark_open_in_new.svg);
+}
+
+body.dark .projects-link:hover {
+  color: var(--secondary-dark-color);
+}
+
+body.dark .footer {
+  background-color: var(--divider-dark-color);
+}
+
+body.dark .footer-signature {
+  color: var(--secondary-dark-color);
+}
+
+body.dark .footer-github-link {
+  color: var(--secondary-dark-color);
+}
+
+body.dark .close-icon rect {
+  fill: var(--divider-dark-color);
+}
+
+body.dark .close-icon path {
+  fill: #FFFFFF;
+}
+
+body.dark .burger-icon rect {
+  fill: var(--divider-dark-color);
+}
+
+body.dark .burger-icon path {
+  fill: #FFFFFF;
+}
+
+body.dark .up-btn path:first-child {
+  fill: var(--divider-dark-color);
+}
+
+body.dark .up-btn path:last-child {
+  fill: #FFFFFF;
 }

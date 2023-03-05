@@ -36,7 +36,7 @@ body {
 .up-btn {
   position: absolute;
   bottom: -72px;
-  right: 46px;
+  right: 16px;
   cursor: pointer;
 }
 
@@ -54,8 +54,7 @@ body {
   position: fixed;
   z-index: 10;
   background-color: var(--background-color);
-  transition: .3s all linear;
-  transition: background-color 0.3s ease;
+  transition: .3s all ease;
   top: 0;
   left: 0;
   padding: 1.6rem 4.6rem;
@@ -71,8 +70,8 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 3.4rem;
-  margin-top: 3.4rem;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
 }
 
 .header-item {
@@ -190,7 +189,7 @@ input:checked + .slider:before {
 
 .burger-icon {
   position: absolute;
-  right: 0;
+  right: 30px;
   top: 16px;
   cursor: pointer;
 }
@@ -373,6 +372,14 @@ input:checked + .slider:before {
   .container {
     padding: 0 4.6rem;
   }
+
+  .up-btn {
+    right: 46px;
+  }
+
+  .burger-icon {
+    right: 0;
+  }
 }
 
 @media (min-width: 576px) {
@@ -489,6 +496,7 @@ input:checked + .slider:before {
 
   .up-btn {
     bottom: 8px;
+    right: 79px;
   }
 }
 

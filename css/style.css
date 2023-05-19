@@ -194,6 +194,10 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
+.profile-avatar {
+  max-width: 320px;
+}
+
 .profile-avatar > img{
   width: 100%;
   border-radius: 0 50% 50% 50%;

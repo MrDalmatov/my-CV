@@ -189,14 +189,12 @@ input:checked + .slider:before {
 
 .burger-icon {
   position: absolute;
-  right: 30px;
+  right: 0px;
   top: 16px;
   cursor: pointer;
 }
 
-.profile-avatar {
-  max-width: 320px;
-}
+
 
 .profile-avatar > img{
   width: 100%;

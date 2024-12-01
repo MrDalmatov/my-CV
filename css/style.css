@@ -276,6 +276,10 @@ input:checked + .slider:before {
   margin-right: 10px;
 }
 
+.text-bold {
+  font-weight: 500;
+}
+
 .contacts-item:nth-child(1)::before {
   background-image: url(../assets/images/location_on.svg);
 }

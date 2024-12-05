@@ -6,6 +6,7 @@ const menuLinks = document.querySelectorAll('.header-link');
 const switchToggle = document.querySelector('.switch input[type="checkbox"]');
 const body = document.body;
 const upBtn = document.querySelector('.up-btn');
+const accordion = document.querySelectorAll('.accordion-header')
 
 // Функция для открытия меню
 function openHeaderNav() {
@@ -62,5 +63,7 @@ upBtn.addEventListener('click', scrollTop);
 // Добавляем обработчики клика для кнопок открытия/закрытия меню
 burgerBtn.addEventListener('click', openHeaderNav);
 closeBtn.addEventListener('click', closeHeaderNav);
+
+
 
 

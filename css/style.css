@@ -33,6 +33,7 @@ body {
 
 .main {
   position: relative;
+  flex: 1 1 auto;
 }
 
 .up-btn {
@@ -40,6 +41,12 @@ body {
   bottom: -72px;
   right: 16px;
   cursor: pointer;
+}
+
+.super-main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .container {
@@ -380,7 +387,7 @@ input:checked + .slider:before {
 }
 
 .accordion {
-  margin-top: 2rem;
+  margin-top: 3.2rem;
 }
 
 .accordion-header {
@@ -398,28 +405,45 @@ input:checked + .slider:before {
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition: max-height 0.7s ease, padding 0.7s ease;
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 500px;
+  max-height: 1000px;
 }
 
 .question {
   background-color: var(--primary-dark-color);
   width: 50%;
-  padding: 1.2rem;
+  padding: 2.2rem;
   border-radius: 2rem;
   align-self: flex-end;
+}
+
+.question > p:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .answer {
   margin-top: 1.8rem;
   width: 75%;
   background-color: var(--divider-color);
-  padding: 1.2rem;
+  padding: 2.2rem;
   border-radius: 2rem;
   align-self: flex-start;
+}
+
+.answer > p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.prompt-list {
+  padding-left: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.prompt-list > li:not(:last-child) {
+  margin-bottom: 0.9rem;
 }
 
 @media (min-width: 420px) {

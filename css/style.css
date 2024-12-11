@@ -409,7 +409,7 @@ input:checked + .slider:before {
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 1000px;
+  max-height: 1500px;
 }
 
 .question {

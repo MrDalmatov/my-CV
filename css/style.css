@@ -396,7 +396,11 @@ input:checked + .slider:before {
   border: none;
   background: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 .accordion-content {
   max-height: 0;
@@ -409,7 +413,16 @@ input:checked + .slider:before {
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 1500px;
+  max-height: 3000px;
+}
+
+.arrow {
+  margin-left: 1.6rem;
+  transition: transform 0.5s ease;
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(-180deg);
 }
 
 .question {
@@ -426,6 +439,7 @@ input:checked + .slider:before {
 
 .answer {
   margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
   width: 75%;
   background-color: var(--divider-color);
   padding: 2.2rem;

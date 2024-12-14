@@ -38,7 +38,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="container second-container">
+      <div class="container second-container ">
         <section class="section section-prompts">
           <h2 class="section-title">Examples of prompts</h2>
           <div class="accordion">
@@ -265,12 +265,54 @@
                 </span>
               </button>
               <div class="accordion-content">
-                
+                <div class="question">
+                  <p>Привет.</p>
+                  <p>Я хочу задать тебе несколько первоначальных инструкций, чтобы ты мог легче выполнять различные задачи. Ниже будет предоставлен некий шаблон для описания функции, ввода и инструкции о том, что нужно делать:</p>
+                  <p>function_name: [Function Name]</p>
+                  <p>input: [Input]</p>
+                  <p>rule: [Instructions on how to process the input]</p>
+                  <p>Я прошу тебя предоставить выходные данные для этой функции на основе предоставленной мной информации. Я заменю текст в скобках информацией, соответствующей функции, которую я хочу, чтобы ты выполнил. Это подробное введение должно помочь тебе более эффективно понять мой запрос и обеспечить желаемый результат. Формат: имя_функции(вход). Если понимаешь, ответь одним словом "ОК"</p>
+                </div>
+                <div class="answer">
+                  ОК
+                </div>
+                <div class="question">
+                  <p>function_name: [password]</p>
+                  <p>input: ['length','capitalized','lowercase','numbers','special']</p>
+                  <p>
+                    rule: [Я хочу, чтобы ты выступил в качестве генератора паролей. Я предоставлю тебе формы ввода, включая «длину», «заглавные», «строчные», «цифры» и «специальные» символы. Твоя задача — с помощью этих форм ввода сгенерировать сложный пароль и предоставить его мне. Не включай в свой ответ никаких пояснений или дополнительной информации, просто укажите сгенерированный пароль. Например, если длина входных данных = 8, заглавные буквы = 1, строчные буквы = 5, цифры = 2, специальные = 1, вашим ответом должен быть пароль, например «D5%t9Bgf».]
+                    Если функция понятна просто ответь "ОК"
+                  </p>
+                </div>
+                <div class="answer">
+                  ОК
+                </div>
+                <div class="question">
+                  password(12,2,7,2,1)
+                </div>
+                <div class="answer">
+                  Gk78@lmqrewz
+                </div>
+                <div class="question">
+                  password(15,5,5,3,2)
+                </div>
+                <div class="answer">
+                  HDj@72kLm#r3qTf
+                </div>
               </div>
             </div>
           </div>
+          
         </section>
+        <svg class="burger-icon prompt-burger-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" rx="24" fill="#C6C6C6"/>
+          <path d="M12 32H36V29.3333H12V32ZM12 25.3333H36V22.6667H12V25.3333ZM12 16V18.6667H36V16H12Z" fill="#292929"/>
+        </svg> 
       </div>
+      <svg class="up-btn prompt-up-btn" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 32C0 14.3269 14.3269 0 32 0H64V32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32Z" fill="#C6C6C6"/>
+        <path d="M21.3334 32L23.2134 33.88L30.6667 26.44V42.6667H33.3334V26.44L40.7734 33.8934L42.6667 32L32 21.3334L21.3334 32Z" fill="#292929"/>
+      </svg>
     </main>
     <footer class="footer">
       <div class="container">

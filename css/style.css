@@ -43,6 +43,10 @@ body {
   cursor: pointer;
 }
 
+.prompt-up-btn {
+  bottom: 1.6rem;
+}
+
 .super-main-container {
   display: flex;
   flex-direction: column;
@@ -203,7 +207,9 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
-
+.prompt-burger-icon {
+  right: 1.6rem;
+}
 
 .profile-avatar > img{
   width: 100%;
@@ -419,6 +425,7 @@ input:checked + .slider:before {
 .arrow {
   margin-left: 1.6rem;
   transition: transform 0.5s ease;
+  fill: var(--secondary-color);
 }
 
 .accordion-item.active .arrow {
@@ -472,6 +479,8 @@ input:checked + .slider:before {
   .burger-icon {
     right: 0;
   }
+
+
 }
 
 @media (min-width: 576px) {
@@ -589,6 +598,23 @@ input:checked + .slider:before {
   .up-btn {
     bottom: 8px;
     right: 79px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .question {
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 75%;
+  }
+
+  .question > p:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  .answer {
+    font-size: 1.2rem;
+    padding: 1rem;
   }
 }
 
@@ -728,4 +754,12 @@ body.dark .up-btn path:first-child {
 
 body.dark .up-btn path:last-child {
   fill: #FFFFFF;
+}
+
+body.dark .accordion-header {
+  color: var(--secondary-dark-color);
+}
+
+body.dark .arrow {
+  fill: var(--secondary-dark-color);
 }
